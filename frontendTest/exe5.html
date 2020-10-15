@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>exe5</title>
+	<script type="text/javascript">
+		function calculate() {
+			var win = document.getElementById("w_num").value;
+			var lose = document.getElementById("l_num").value;
+			var draw = document.getElementById("d_num").value;
+
+			var p_win = 3;
+			var p_lose =0;
+			var p_draw =1;
+			var total = '';
+
+			total = (p_win*win) + (p_lose*lose) + (p_draw*draw);
+			alert('You have '+ total +' Points now');
+
+		}
+
+
+	</script>
+</head>
+<body>
+	<label>Win number : </label>
+	<input type="number" name="w_num" id="w_num">
+	<br><br>
+	<label>Draw Number : </label>
+	<input type="number" name="d_num" id="d_num">
+	<br><br>
+	<label>Lost Number : </label>
+	<input type="number" name="l_num" id="l_num">
+	<br><br>
+	<button onclick="calculate()">Calculate Points</button>
+</body>
+</html>

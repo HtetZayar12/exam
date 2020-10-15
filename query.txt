@@ -1,0 +1,39 @@
+Exam
+-------
+
+	Test 1
+	--------
+
+	Q1.SELECT name FROM staffs
+
+	Q2.
+
+	Q3.SELECT * FROM staffs ORDER By name
+
+	Q4.
+
+	Q5.SELECT * FROM staffs WHERE name IN('Kay Thwe','Thae Su Wai')
+
+	Q6.SELECT * FROM staffs INNER JOIN departments ON staffs.department_id=6 AND departments.id=6
+
+	Q7.SELECT name FROM staffs WHERE name LIKE"%a%"
+
+	Q8.SELECT name FROM staffs WHERE name LIKE"%e"
+
+	Q9.	SELECT * FROM staffs WHERE salary BETWEEN 100000 AND 500000
+
+	Q10.SELECT * FROM `staffs` WHERE joindate LIKE'2014-02%'
+
+	Q11.SELECT COUNT(*) FROM staffs INNER JOIN departments ON staffs.department_id=6 AND departments.id=6
+
+	Q12.SELECT * FROM staffs INNER JOIN departments ON staffs.department_id=1 AND departments.id=1
+
+	Q13.SELECT * FROM staffs LIMIT 5
+
+	Q14.SELECT salary FROM staffs WHERE salary>400000
+
+	Q15.SELECT department_id, SUM(salary) AS total FROM staffs GROUP BY department_id
+
+	Q16.SELECT * from staffs INNER JOIN bonus ON bonus.satff_id = staffs.id WHERE bonus.bonusdate LIKE'2016-02%'
+
+	Q17.SELECT * FROM staffs WHERE name='Aye Aye'

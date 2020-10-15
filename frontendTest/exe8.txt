@@ -1,0 +1,4 @@
+Taking textarea value in jquery
+------------------------------------
+
+var key = $.trim($("#id").val());

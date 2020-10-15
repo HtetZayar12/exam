@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>exe6</title>
+	<script type="text/javascript" src="../bootstrap/js/jquery.min.js"></script>
+	<script type="text/javascript">
+		function calculate () {
+			var f_num =parseInt( document.getElementById("f_num").value);
+			var s_num =parseInt(document.getElementById("s_num").value);
+			var operator = $('input[name="operator"]:checked').val()
+			console.log(operator);
+			var total='';
+
+			if (operator == "plus") {
+				total=f_num+s_num;
+				alert(total);
+			}else if (operator == "minus") {
+				total = f_num-s_num;
+				alert(total);
+			}else if (operator == "multiply") {
+				total = f_num*s_num;
+				alert(total);
+			}else if (operator == "divided") {
+				total = f_num/s_num;
+				alert(total);
+			}else if (operator == "modulus") {
+				total = f_num%s_num;
+				alert(total);
+			}else{
+				alert("Choose your operator")
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<label>Enter Your First Number</label>
+	<input type="number" name="first_number" id="f_num">
+	<br><br>
+	<label>Enter Your Second Number</label>
+	<input type="number" name="first_number" id="s_num">
+	<br><br>
+	<label>Choose Your Operator</label>
+	<br><br>
+	<input type="radio" name="operator" value="plus" id="operator">Plus(+)
+	<input type="radio" name="operator" value="minus" id="operator">Minus(-)
+	<input type="radio" name="operator" value="multiply" id="operator">Multiply(*)
+	<input type="radio" name="operator" value="divided" id="operator">Divided(/)
+	<input type="radio" name="operator" value="modulus" id="operator">Modulus(%)
+	<br><br>
+	<button onclick="calculate()">Calculate</button>
+
+</body>
+</html>
